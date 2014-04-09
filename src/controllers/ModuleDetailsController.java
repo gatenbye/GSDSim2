@@ -26,7 +26,7 @@ public class ModuleDetailsController {
 		addModule = new JButton();
 		addModule.addActionListener (new ActionListener() {
       			public void actionPerformed(ActionEvent e) {
-				customController.addModule((String) siteCombo.getSelectedItem(), moduleNameTA.getText(), Integer.parseInt(numHoursTA.getText()), (String) devMethodCombo.getSelectedItem());
+				customController.addModule((String) siteCombo.getSelectedItem(), moduleNameTA.getText(), Double.parseDouble(numHoursTA.getText()), (String) devMethodCombo.getSelectedItem());
 				moduleNameTA.setText("");
 				numHoursTA.setText("");
      			}        

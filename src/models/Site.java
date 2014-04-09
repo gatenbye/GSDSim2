@@ -9,7 +9,7 @@ public class Site {
 	private int workers;
 	private List<Module> modules;
 
-	public Site(String name, Coordinate location, int timezone, int workers) {
+	public Site(String name, Coordinate location, int workers, int timezone) {
 		this.name = name;
 		this.location = new double[]{location.getLat(), location.getLon()};
 		this.timezone = timezone;

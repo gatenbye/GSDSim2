@@ -45,7 +45,7 @@ public class CustomController {
 		sites.add(new Site(name, map.getPosition(clickPosition), numWorkers, timezone));
 	}
 
-	public void addModule(String siteName, String moduleName, int estimate, String devMethod) {
+	public void addModule(String siteName, String moduleName, double estimate, String devMethod) {
 		for (Site site : sites) {
 			if (site.getName().equals(siteName)) {
 				site.addModule(new Module(moduleName, estimate, devMethod));

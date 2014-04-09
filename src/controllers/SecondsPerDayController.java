@@ -32,7 +32,7 @@ public class SecondsPerDayController {
 		okButton.addActionListener (new ActionListener() {
       			public void actionPerformed(ActionEvent e) {
 				startupController.setSecondsPerDay(slider.getValue());
-				startupController.setDeveloperCost(Integer.parseInt(developerCost.getText()));
+				startupController.setDeveloperCost(Double.parseDouble(developerCost.getText()));
 				startupController.setDeveloperProductivity(Integer.parseInt(developerProductivity.getText()));
 				startupController.setPlayerMoney(Integer.parseInt(playerMoney.getText()));
 				if (((String)pauseEnabled.getSelectedItem()).equals("True")) {

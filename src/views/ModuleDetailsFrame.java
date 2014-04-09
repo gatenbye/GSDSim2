@@ -29,7 +29,7 @@ public class ModuleDetailsFrame extends JFrame {
 		taPanel.add(siteCombo);
 		taPanel.add(new JLabel("Module name: ", JLabel.TRAILING));
 		taPanel.add(moduleNameTA);
-		taPanel.add(new JLabel("Number of workers: ", JLabel.TRAILING));
+		taPanel.add(new JLabel("Number of hours: ", JLabel.TRAILING));
 		taPanel.add(numHoursTA);	
 		taPanel.add(new JLabel("Development method: ", JLabel.TRAILING));
 		taPanel.add(devMethodCombo);

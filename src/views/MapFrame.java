@@ -16,9 +16,9 @@ public class MapFrame extends JFrame {
 		setSize(d.width, d.height);
 		pane = getLayeredPane();
 		pause.setText("Pause");
-		pause.setBounds(d.width - 100, 5, 95, 45);
-		time.setBounds(d.width - 100, 55, 95, 25);
-		money.setBounds(d.width - 100, 80, 95, 25);
+		pause.setBounds(d.width - 170, 10, 160, 60);
+		time.setBounds(d.width - 170, 75, 160, 25);
+		money.setBounds(d.width - 170, 105, 160, 25);
 		pane.add(time, new Integer(2));
 		pane.add(money, new Integer(2));
 		pane.add(pause, new Integer(2));

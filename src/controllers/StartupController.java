@@ -8,7 +8,7 @@ import java.awt.event.*;
 public class StartupController {
 
 	private int secondsPerDay;
-	private int developerCost;
+	private double developerCost;
 	private int developerProductivity;
 	private int playerMoney;	
 	private boolean pause;
@@ -30,7 +30,7 @@ public class StartupController {
 		secondsPerDay = spd;
 	}
 
-	public void setDeveloperCost(int cost) {
+	public void setDeveloperCost(double cost) {
 		developerCost = cost;
 	}
 
@@ -54,7 +54,7 @@ public class StartupController {
 		return secondsPerDay;
 	}	
 
-	public int getDeveloperCost() {
+	public double getDeveloperCost() {
 		return developerCost;
 	}
 
@@ -65,6 +65,7 @@ public class StartupController {
 	public int getPlayerMoney() {
 		return playerMoney;
 	}
+
 	public MainController getMainController() {
 		return mainController;
 	}

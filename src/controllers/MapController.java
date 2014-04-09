@@ -44,8 +44,11 @@ public class MapController {
 	}
 
 	public void setTime(String timeString) {
-		this.timeString = timeString;
 		time.setText("Time: " + timeString);
+	}
+
+	public void setMoney(double money) {
+		this.money.setText("Money: " + Double.valueOf(money).toString());
 	}
 
 }

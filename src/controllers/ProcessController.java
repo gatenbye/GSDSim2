@@ -8,6 +8,9 @@ public class ProcessController {
 	private List<double[]> origStepEstimates;
 	private List<double[]> stepEstimates;
 	private List<double[]> workDonePerSection;
+	private int money;
+	private double developerCost;
+	private double developerProductivity;
 	private double workLeftToDo;
 	private double workPoints;
 	private String[] stages;
@@ -31,6 +34,9 @@ public class ProcessController {
 		stepEstimates = new ArrayList<double[]>();
 		origStepEstimates = new ArrayList<double[]>();
 		s = mainController.getStartupController().getScenario();
+		developerCost = mainController.getStartupController().getDeveloperCost();
+		developerProductivity = mainController.getStartupController().getDeveloperProductivity();
+		money = mainController.getStartupController().getPlayerMoney();
 		for(Site site : s.getSites()) {
 			for(Module module : site.getModules()) {
 				modules.add(module);
@@ -46,12 +52,14 @@ public class ProcessController {
 
 	public void hourlyUpdate(long time) {
 
-
 		int i;
+
 		System.out.println("Performing hourly update.");
 		for(Site site : s.getSites()) {
-			workPoints = site.getNumWorkers();
+			workPoints = site.getNumWorkers() * developerProductivity;
 			if(((site.getTimezone() + time) % 24 >= startOfWorkingDay) && ((site.getTimezone() + time) % 24 <= endOfWorkingDay)) {
+				money -= site.getNumWorkers() * developerCost;
+				mainController.getMapController().setMoney(money);
 				System.out.println("Performing work at site: " + site.getName());				
 				for(int mI = 0; mI < site.getModules().size(); mI++) {
 					i = modules.indexOf(site.getModules().get(mI));

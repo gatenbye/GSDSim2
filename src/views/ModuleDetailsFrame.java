@@ -33,7 +33,7 @@ public class ModuleDetailsFrame extends JFrame {
 		taPanel.add(numHoursTA);	
 		taPanel.add(new JLabel("Development method: ", JLabel.TRAILING));
 		taPanel.add(devMethodCombo);
-		SpringUtilities.makeCompactGrid(taPanel, 4, 2, 6, 6, 6, 6);
+		SpringUtilities.makeCompactGrid(taPanel, 4, 2, 6, 6, 6, (d.height - (d.height / 2)) / 4);
 		layoutPanel = new JPanel();
 		layoutPanel.setLayout(new GridLayout(0, 1));
 		layoutPanel.add(addModule);

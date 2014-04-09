@@ -31,7 +31,7 @@ public class SecondsPerDayFrame extends JFrame {
 		mainPanel.add(playerMoneyTA);
 		mainPanel.add(new JLabel("Pause Enabled: ", JLabel.TRAILING));
 		mainPanel.add(pauseEnabled);
-		SpringUtilities.makeCompactGrid(mainPanel, 5, 2, 6, 6, 6, 6);
+		SpringUtilities.makeCompactGrid(mainPanel, 5, 2, 6, 6, 6, (d.height - (d.height / 2)) / 8);
 		okPanel = new JPanel();
 		okPanel.setLayout(new BorderLayout());
 		okPanel.add(okButton, BorderLayout.EAST);

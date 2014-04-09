@@ -26,7 +26,7 @@ public class SiteDetailsFrame extends JFrame {
 		taPanel.add(numWorkersTA);
 		taPanel.add(new JLabel("Timezone difference: ", JLabel.TRAILING));
 		taPanel.add(timezoneTA);
-		SpringUtilities.makeCompactGrid(taPanel, 3, 2, 6, 6, 6, 6);
+		SpringUtilities.makeCompactGrid(taPanel, 3, 2, 6, 6, 6, (d.height - (d.height / 2)) / 4);
 		okPanel = new JPanel();
 		okPanel.setLayout(new BorderLayout());
 		okPanel.add(okButton, BorderLayout.EAST);

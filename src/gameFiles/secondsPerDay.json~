@@ -1,4 +1,4 @@
 {
-	"minSecondsPerDay": 10,
+	"minSecondsPerDay": 1,
 	"maxSecondsPerDay": 230
 }

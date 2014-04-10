@@ -15,11 +15,10 @@ public class SecondsPerDayFrame extends JFrame {
 		setSize(d.width / 2, d.height / 2);
 		setLocation((d.width - (d.width / 2)) / 2, (d.height - (d.height / 2)) / 2);
 		setLayout(new BorderLayout());
-		slider.setMinorTickSpacing(1);
+		slider.setMinorTickSpacing(10);
 		slider.setMajorTickSpacing(20);
 		slider.setPaintTicks(true);  
 		slider.setPaintLabels(true);
-		mainPanel = new JPanel(new SpringLayout());
 		mainPanel = new JPanel(new SpringLayout());
 		mainPanel.add(new JLabel("Seconds Per Day: ", JLabel.TRAILING));
 		mainPanel.add(slider);

@@ -1,8 +1,8 @@
+import javax.swing.JFrame;
 public class Main {
 
-	public static void main (String [] args) {
-		new MainController();
-		while(true){}
-	}
+    public static void main(String[] args) {
+	new MainController();
+    }
 
 }

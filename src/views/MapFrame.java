@@ -10,7 +10,6 @@ public class MapFrame extends JFrame {
 	JPanel mapPanel;
 
 	public MapFrame(JMapViewer map, JLabel time, JLabel money, JButton pause) {
-		super();
 		t = Toolkit.getDefaultToolkit();
 		d = t.getScreenSize();
 		setSize(d.width, d.height);

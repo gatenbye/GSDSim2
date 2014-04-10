@@ -26,7 +26,7 @@ public class DefaultCustomController {
 				defaultCustomFrame.dispose();
 			}
 		});
-		defaultCustomFrame = new DefaultCustomFrame(custom, defaultB); 
+		defaultCustomFrame = new DefaultCustomFrame(custom, defaultB);
 
 	}
 

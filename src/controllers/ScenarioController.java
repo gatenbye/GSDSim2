@@ -35,8 +35,8 @@ public class ScenarioController {
 				new SecondsPerDayController(startupController);
      			}        
 		}); 
-
 		scenarioFrame = new ScenarioFrame(scenarios, bG, okButton);
+
 	}
 
 	public StartupController getStartupController() {

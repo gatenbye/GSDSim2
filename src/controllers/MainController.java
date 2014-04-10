@@ -1,3 +1,6 @@
+import java.awt.event.*;
+import javax.swing.*;
+
 public class MainController {
 	
 	private TimeController timeController;
@@ -8,7 +11,7 @@ public class MainController {
 	public MainController() {
 		
 		startupController = new StartupController(this);
-
+	
 	}
 
 	public void setupMainFrame() {

@@ -20,7 +20,7 @@
 	</target>
 
 	<target name="run" depends="compile">
-    		<java classname="Main" fork="true">
+    		<java classname="Main" fork = "true">
      			<classpath>
 				<pathelement location = "build/classes"/>
 				<pathelement location = "lib/JMapViewer.jar"/>

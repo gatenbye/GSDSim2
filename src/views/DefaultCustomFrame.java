@@ -20,6 +20,7 @@ public class DefaultCustomFrame extends JFrame {
 		add(custom);
 		add(defaultB);
 		setVisible(true);
+		
 
 	}
 	
